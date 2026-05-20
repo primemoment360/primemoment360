@@ -3,11 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PrimeMoment360 - 360 Photo Booth Rentals in Metro Atlanta</title>
-  <meta name="description" content="Premier 360 photo booth rental in Metro Atlanta. Weddings, corporate events, birthdays, and more.">
+  <title>PrimeMoment360 — 360 Photo Booth Rentals in Metro Atlanta</title>
+  <meta name="description" content="PrimeMoment360 brings the 360 photo booth experience to weddings, parties, and corporate events across Metro Atlanta. Unlimited spins, instant QR video delivery. Where every spin tells a story.">
+  <meta name="theme-color" content="#0d0d0d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PrimeMoment360 — 360 Photo Booth Rentals">
+  <meta property="og:description" content="360 photo booth rentals in Metro Atlanta. Where every spin tells a story.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://primemoment360.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- Google Analytics (replace G-GVLC78JR0J with your real Measurement ID) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVLC78JR0J"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,51 +28,341 @@
   </script>
 </head>
 <body>
-  <header>
-    <h1>PrimeMoment360</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#book">Book</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">360</span>
+        <span class="brand-text">Prime<span class="gold">Moment</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#packages">Packages</a>
+        <a href="#how">How It Works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#book" class="nav-cta">Reserve Your Date</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <section id="hero">
-    <h2>360 Photo Booth Rentals in Metro Atlanta</h2>
-    <p>Make your event unforgettable.</p>
-    <a href="#book" class="cta">Book your event</a>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">360 Photo Booth &middot; Metro Atlanta</p>
+      <h1>Prime<span class="gold">Moment</span>360</h1>
+      <p class="tagline">Where Every Spin Tells a Story</p>
+      <p class="hero-sub">Unforgettable 360 photo booth experiences for weddings, birthdays, corporate events, and every celebration in between.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-gold">Reserve Your Date</a>
+        <a href="#packages" class="btn btn-outline">View Packages</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span></div>
   </section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <p>Coming soon.</p>
+  <!-- ============ INTRO ============ -->
+  <section class="intro" id="about">
+    <div class="container intro-grid">
+      <div class="intro-text">
+        <p class="section-eyebrow">The Experience</p>
+        <h2>A spin worth sharing</h2>
+        <p>Step onto the platform, strike your pose, and let our 360 photo booth capture every angle in stunning slow motion. Guests receive their videos instantly through a simple QR code &mdash; ready to share before the night is over.</p>
+        <p>From intimate gatherings to grand celebrations, PrimeMoment360 delivers a polished, operator-guided experience that keeps the energy high and the memories rolling.</p>
+      </div>
+      <div class="intro-highlights">
+        <div class="highlight"><span class="highlight-num">∞</span><span class="highlight-label">Unlimited Spins</span></div>
+        <div class="highlight"><span class="highlight-num">QR</span><span class="highlight-label">Instant Video Delivery</span></div>
+        <div class="highlight"><span class="highlight-num">1–2</span><span class="highlight-label">Guests Per Spin</span></div>
+        <div class="highlight"><span class="highlight-num">★</span><span class="highlight-label">Professional Operator</span></div>
+      </div>
+    </div>
   </section>
 
-  <section id="book">
-    <h2>Book a Consultation</h2>
-    <div class="calendly-inline-widget"
-         data-url="https://calendly.com/primemoment360/30min"
-         style="min-width:320px;height:700px;"></div>
-    <script type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            async></script>
+  <!-- ============ PACKAGES ============ -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Services &amp; Packages</p>
+        <h2>Choose your spin</h2>
+        <p class="section-lead">Every package includes unlimited spins and instant QR video delivery. Pricing reflects our standard rate.</p>
+      </div>
+
+      <div class="package-grid">
+
+        <article class="package-card">
+          <h3>Essential Spin</h3>
+          <p class="price">$250</p>
+          <ul class="package-features">
+            <li>Up to 2 hours of service</li>
+            <li>Unlimited spins (1–2 guests per spin)</li>
+            <li>QR code video delivery</li>
+            <li>Standard backdrop</li>
+            <li>Operator-controlled experience</li>
+          </ul>
+          <a href="#book" class="btn btn-outline btn-block">Reserve This Package</a>
+        </article>
+
+        <article class="package-card featured">
+          <span class="badge">Most Popular</span>
+          <h3>Signature Spin</h3>
+          <p class="price">$375</p>
+          <ul class="package-features">
+            <li>Up to 3 hours of service</li>
+            <li>Unlimited spins (1–2 guests per spin)</li>
+            <li>Custom event title overlay</li>
+            <li>QR code video delivery</li>
+            <li>Standard backdrop</li>
+            <li>Operator-controlled experience</li>
+          </ul>
+          <a href="#book" class="btn btn-gold btn-block">Reserve This Package</a>
+        </article>
+
+        <article class="package-card">
+          <h3>Prime Moment</h3>
+          <p class="price">$500</p>
+          <ul class="package-features">
+            <li>Up to 4 hours of service</li>
+            <li>Unlimited spins (1–2 guests per spin)</li>
+            <li>Custom overlay &amp; branded experience</li>
+            <li>QR code video delivery</li>
+            <li>Coordinated backdrop to complement your theme</li>
+            <li>Operator-controlled experience</li>
+          </ul>
+          <a href="#book" class="btn btn-outline btn-block">Reserve This Package</a>
+        </article>
+
+      </div>
+
+      <div class="package-notes">
+        <p><strong>Additional time:</strong> $125 per hour beyond your package.</p>
+        <p><strong>Travel fee</strong> may apply based on distance.</p>
+        <p><strong>$50 non-refundable deposit</strong> secures your event date &amp; time. Remaining balance is due no later than the day of the event, prior to setup.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/xpqnqoor" method="POST">
-      <label>Your name <input type="text" name="name" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Event date <input type="date" name="event_date"></label>
-      <label>Tell us about your event <textarea name="message" rows="4" required></textarea></label>
-      <input type="text" name="_gotcha" style="display:none">
-      <input type="hidden" name="_subject" value="New PrimeMoment360 inquiry">
-      <button type="submit">Send</button>
-    </form>
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Simple &amp; Seamless</p>
+        <h2>How it works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Choose your package</h3>
+          <p>Pick the spin package that fits your event and guest count.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Reserve your date</h3>
+          <p>Lock in your date and time with a $50 deposit.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>We set up</h3>
+          <p>Our team arrives early and handles the full setup for you.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">4</span>
+          <h3>Guests spin</h3>
+          <p>Step on, strike a pose, and let the camera do the rest.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">5</span>
+          <h3>Instant videos</h3>
+          <p>Guests scan a QR code and share their spin in seconds.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>(c) 2026 PrimeMoment360 - primemoment360@gmail.com</p>
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">The Moments</p>
+        <h2>Gallery</h2>
+        <p class="section-lead">A glimpse of the spins, smiles, and celebrations.</p>
+      </div>
+      <!-- GALLERY: replace each .gallery-item placeholder with <img src="/assets/img/your-photo.jpg" alt="..."> -->
+      <div class="gallery-grid">
+        <div class="gallery-item"><span>Your event photo</span></div>
+        <div class="gallery-item"><span>Your event photo</span></div>
+        <div class="gallery-item"><span>Your event photo</span></div>
+        <div class="gallery-item"><span>Your event photo</span></div>
+        <div class="gallery-item"><span>Your event photo</span></div>
+        <div class="gallery-item"><span>Your event photo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Why PrimeMoment360</p>
+        <h2>The Prime difference</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item"><h3>Unlimited Spins</h3><p>No limits, no waiting in line all night — guests spin as often as they like.</p></div>
+        <div class="why-item"><h3>Instant Delivery</h3><p>Videos delivered on the spot via QR code, ready to post and share.</p></div>
+        <div class="why-item"><h3>Custom Overlays</h3><p>Add your event name, date, and design touches for a personalized finish.</p></div>
+        <div class="why-item"><h3>Professional Operator</h3><p>A dedicated operator runs the booth so your guests are always taken care of.</p></div>
+        <div class="why-item"><h3>Coordinated Backdrops</h3><p>Backdrop options that complement your event theme and color palette.</p></div>
+        <div class="why-item"><h3>Metro Atlanta</h3><p>Proudly serving weddings, parties, and corporate events across the metro area.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOK ============ -->
+  <section class="book" id="book">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Reserve Your Date</p>
+        <h2>Book your event</h2>
+        <p class="section-lead">Secure your date with a $50 non-refundable deposit. We'll follow up to confirm your package and event details.</p>
+      </div>
+
+      <div class="book-grid">
+        <div class="book-deposit">
+          <h3>Reserve with a deposit</h3>
+          <p class="deposit-amount">$50<span>non-refundable deposit</span></p>
+          <p>This deposit secures your event date and time. The remaining balance is due no later than the day of the event, prior to setup.</p>
+          <!-- STRIPE: replace the href below with your Stripe Payment Link (https://buy.stripe.com/...) -->
+          <a href="https://buy.stripe.com/REPLACE_WITH_YOUR_PAYMENT_LINK" class="btn btn-gold btn-block" id="depositBtn">Pay $50 Deposit &amp; Reserve</a>
+          <p class="fineprint">Deposits are non-refundable. One reschedule may be permitted based on availability and notice provided.</p>
+        </div>
+
+        <div class="book-consult">
+          <h3>Prefer to talk first?</h3>
+          <p>Book a free consultation and we'll walk through packages, dates, and any questions about your event.</p>
+          <!-- Calendly inline widget -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/primemoment360/30min" style="min-width:280px;height:630px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Good To Know</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">What exactly is a 360 photo booth?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Guests stand on a platform while a camera arm rotates around them, capturing a dynamic slow-motion video from every angle. It's a showstopping, interactive experience that keeps guests entertained all night.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How much space is needed?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>We recommend a flat, level area of roughly 10 x 10 feet with access to a standard power outlet nearby. Indoor or covered outdoor spaces work best.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How many guests can spin at once?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>1–2 guests per spin. Larger groups may be approved by the operator on a case-by-case basis to keep everyone safe.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you travel for events?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Yes — we serve events throughout Metro Atlanta. A travel fee may apply depending on the distance to your venue.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How do guests get their videos?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Instantly. After each spin, guests scan a QR code to download and share their video right from their phone.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How do I book, and when is payment due?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>A $50 non-refundable deposit secures your date and time. The remaining balance is due no later than the day of the event, prior to setup.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I reschedule if something comes up?<span class="faq-icon"></span></button>
+          <div class="faq-a"><p>Deposits are non-refundable, but one reschedule may be permitted based on availability and the notice provided. Reach out as early as possible and we'll do our best to accommodate.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2>Let's plan your moment</h2>
+        <p class="section-lead">Questions about packages, dates, or your venue? Send us a note and we'll get right back to you.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" action="https://formspree.io/f/xpqnqoor" method="POST">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="event_date">Event date</label>
+            <input type="date" id="event_date" name="event_date">
+          </div>
+          <div class="field">
+            <label for="package">Package of interest</label>
+            <select id="package" name="package">
+              <option value="">Select a package</option>
+              <option value="Essential Spin — $250">Essential Spin — $250</option>
+              <option value="Signature Spin — $375">Signature Spin — $375</option>
+              <option value="Prime Moment — $500">Prime Moment — $500</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your event</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New PrimeMoment360 inquiry">
+          <button type="submit" class="btn btn-gold btn-block">Send Inquiry</button>
+        </form>
+        <div class="contact-info">
+          <h3>PrimeMoment360</h3>
+          <p class="contact-tag">Where Every Spin Tells a Story</p>
+          <p><span class="contact-label">Email</span><a href="mailto:primemoment360@gmail.com">primemoment360@gmail.com</a></p>
+          <p><span class="contact-label">Service Area</span>Metro Atlanta, Georgia</p>
+          <p><span class="contact-label">Booking</span>$50 non-refundable deposit secures your date</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">Prime<span class="gold">Moment</span>360</span>
+        <p>Where every spin tells a story.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#packages">Packages</a>
+        <a href="#how">How It Works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book">Book</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 PrimeMoment360 &middot; 360 Photo Booth Rentals &middot; Metro Atlanta</p>
+      </div>
+    </div>
   </footer>
 
   <script src="/assets/js/main.js"></script>
