@@ -57,13 +57,4 @@
     });
   });
 
-  /* ---- Deposit button: warn if Stripe link not yet set ---- */
-  var depositBtn = document.getElementById('depositBtn');
-  if (depositBtn && depositBtn.getAttribute('href').indexOf('REPLACE_WITH_YOUR_PAYMENT_LINK') !== -1) {
-    depositBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      alert('Online deposit payment is being set up. Please use the contact form below or email primemoment360@gmail.com to reserve your date.');
-    });
-  }
-
 })();
